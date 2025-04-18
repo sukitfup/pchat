@@ -161,7 +161,7 @@ class BotUI:
             self.log(f"Joined {channel}")
         elif message.startswith("CHANNEL_TOPIC "):
             topic = message[len("CHANNEL_TOPIC "):].strip()
-            self.topic_label.config(text=f"| Topic: {topic}")
+            self.topic_label.config(text=f"|  Topic: {topic}")
         else:
             self.output_text.insert(tk.END, message + "\n")
             self.output_text.see(tk.END)
