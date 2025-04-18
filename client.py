@@ -17,7 +17,7 @@ class AsyncClient:
         self.writer = None
         self.running = False
         self.delay = 5
-        self.timeout = 1000
+        self.timeout = 5
 
         self.message_handler = MessageHandler(
             send_pong=self.send_pong,
