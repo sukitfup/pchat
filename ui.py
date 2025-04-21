@@ -19,7 +19,7 @@ class BotUI:
 
         # Load icons for oper, tahc, and px2d
         self.icons = {}
-        icon_keys = ["OPER", "TAHC", "PX2D"]
+        icon_keys = ["OPER", "TAHC", "PX2D", "RTSJ"]
         for key in icon_keys:
             path = f"icons/{key}.png"
             try:
